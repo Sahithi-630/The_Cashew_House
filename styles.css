@@ -954,16 +954,18 @@ img, svg {
     transition: var(--transition-smooth);
 }
 
-.bg-gallery-1 {
-    background: linear-gradient(rgba(34, 18, 8, 0.4), rgba(34, 18, 8, 0.4)), radial-gradient(circle, #8E7A6E 0%, #4E3C30 100%);
+.gallery-hd-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-smooth);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.bg-gallery-2 {
-    background: linear-gradient(rgba(30, 70, 32, 0.4), rgba(30, 70, 32, 0.4)), radial-gradient(circle, #89B390 0%, #2A5A35 100%);
-}
-
-.bg-gallery-3 {
-    background: linear-gradient(rgba(197, 160, 40, 0.4), rgba(197, 160, 40, 0.4)), radial-gradient(circle, #EAD385 0%, #A4821E 100%);
+.gallery-img-placeholder:hover .gallery-hd-image {
+    transform: scale(1.08);
 }
 
 .img-abstract-layer {
